@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+  {% for each in mockset %}
+    <button><a href="#">{{each.company.name}} Mock Set: {{each.msnumber}}</a></button>
+  {% endfor %}
+
+{% endblock content %}
